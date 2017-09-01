@@ -19,7 +19,10 @@ jQuery(document).ready(function () {
         var recordpicker_text = this_element.attr('recordpicker_text');
         var recordpicker_value = this_element.attr('recordpicker_value');
 
+alert(recordpicker_text);
+
         window.parent.jQuery('.' + field_name + '_recordpicker .recordpicker_text').html(recordpicker_text);
+        window.parent.jQuery('.' + field_name + '_recordpicker .recordpicker_text').val(recordpicker_text);
         window.parent.jQuery('.' + field_name + '_recordpicker .recordpicker_value').val(recordpicker_value);
 
 

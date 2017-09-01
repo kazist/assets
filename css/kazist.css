@@ -6,14 +6,9 @@ and open the template in the editor.
 /*  
     Created on : Jan 20, 2016, 1:13:53 PM
     Author     : sbc
-
-input[type="text"], textarea, select {
-    max-width: 350px;
-    width: 90% !important;
-    display: inline-block !important; 
-}
-
 */
+
+
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -- My Enhancement -- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 .clr{clear:both; margin-top: 3px;}
 .item-listing{list-style: none; margin-left:5px; padding-left:0;}
