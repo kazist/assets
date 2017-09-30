@@ -183,6 +183,7 @@ kazist = function () {
                     ],
                     toolbar: "bold italic underline | alignleft aligncenter alignright  | fontsizeselect | forecolor backcolor | " +
                             "bullist numlist",
+                    menubar: false,
                     toolbar_items_size: 'small',
                     document_base_url: kazist_document.web_root,
                     powerpaste_word_import: 'clean',
@@ -233,6 +234,7 @@ kazist = function () {
                     toolbar: "bold italic underline strikethrough | alignleft aligncenter alignright alignjustify  | fontselect fontsizeselect | forecolor backcolor | " +
                             "cut copy paste searchreplace | hr | bullist numlist | outdent indent | undo redo | link unlink image media | table",
                     toolbar_items_size: 'small',
+                    menubar: false,
                     document_base_url: kazist_document.web_root,
                     powerpaste_word_import: 'clean',
                     powerpaste_html_import: 'merge',
