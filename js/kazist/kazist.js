@@ -280,9 +280,9 @@ kazist = function () {
                 url += '?activity=' + task_name;
             }
 
-            jQuery('#' + main_form_id).attr('action', url);
+            jQuery('.' + main_form_id).attr('action', url);
 
-            jQuery('#' + main_form_id).submit();
+            jQuery('.' + main_form_id).submit();
 
             return false;
 
@@ -293,6 +293,23 @@ kazist = function () {
             if (!confirm_delete) {
                 return false;
             }
+
+            var base_route = kazist_document.base_route;
+            var main_form_id = jQuery('#main_form_id').val();
+            var url = kazist_document.web_base + '/' + base_route.split('.').join('/');
+
+            if (view_name != '' && typeof view_name != 'undefined') {
+                url += '/' + view_name;
+            }
+
+            if (task_name != '' && typeof task_name != 'undefined') {
+                url += '?activity=' + task_name;
+            }
+
+
+            jQuery('.' + main_form_id).attr('action', url);
+
+            jQuery('.' + main_form_id).submit();
 
         }, onClickSelectButtons: function (this_element) {
 
