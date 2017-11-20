@@ -280,9 +280,9 @@ kazist = function () {
                 url += '?activity=' + task_name;
             }
 
-            jQuery('.' + main_form_id).attr('action', url);
+            jQuery('#' + main_form_id).attr('action', url);
 
-            jQuery('.' + main_form_id).submit();
+            jQuery('#' + main_form_id).submit();
 
             return false;
 
