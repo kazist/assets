@@ -82,19 +82,21 @@ kazist = function () {
                 }
             });
 
-            html.find('.confirm_delete').click(function () {
+            html.find('.confirm_delete').on('click',function (e) {
+
+                e.stopPropagation();
 
                 var confirm_delete = confirm('Are you sure you want to delete selected record.');
 
-                if (!confirm_delete) {
-                    return  kazist.confirmDelete();
+                if (confirm_delete) {
+                    
+                    var href_url = jQuery(this).attr('href');
+
+                    window.location.href = href_url;
                 }
                 return false;
             });
 
-            html.find('.kazi-delete').click(function () {
-                kazist.setViewNSubmit('delete');
-            });
 
             html.find('.kazi-add').click(function () {
 
@@ -102,8 +104,15 @@ kazist = function () {
                 kazist.setViewNSubmit('add', 'save');
             });
 
-            html.find('.kazi-delete').click(function () {
-                kazist.setViewNSubmit('delete');
+            html.find('.kazi-delete').on('click', function (e) {
+
+                e.stopPropagation();
+
+                var confirm_delete = confirm('Are you sure you want to delete selected record.');
+
+                if (confirm_delete) {
+                    kazist.setViewNSubmit('delete');
+                }
             });
 
             html.find('.kazi-detail').click(function () {
