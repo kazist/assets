@@ -233,6 +233,7 @@ kazist = function () {
                         }
                     }
                 });
+                
                 tinymce.init({
                     selector: "textarea.kazi-editor-advanced",
                     plugins: [
@@ -243,7 +244,7 @@ kazist = function () {
                     toolbar: "bold italic underline strikethrough | alignleft aligncenter alignright alignjustify  | fontselect fontsizeselect | forecolor backcolor | " +
                             "cut copy paste searchreplace | hr | bullist numlist | outdent indent | undo redo | link unlink image media | table",
                     toolbar_items_size: 'small',
-                    menubar: false,
+                    menubar: true,
                     document_base_url: kazist_document.web_root,
                     powerpaste_word_import: 'clean',
                     powerpaste_html_import: 'merge',
